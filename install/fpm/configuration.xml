@@ -807,7 +807,11 @@
             <entry>
              <literal>%C</literal>
             </entry>
-            <entry>%CPU</entry>
+            <entry>
+             %CPU used by the request.It can accept the following formats:
+             <literal>%{user}C</literal> for user CPU only,
+             <literal>%{system}C</literal> for system CPU only,
+             <literal>%{total}C</literal>  for user + system CPU (default)</entry>
            </row>
            <row>
             <entry>
