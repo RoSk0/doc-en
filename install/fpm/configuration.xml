@@ -859,7 +859,12 @@
             <entry>
              <literal>%M</literal>
             </entry>
-            <entry>memory</entry>
+            <entry>
+             peak of memory allocated by PHP it can accept the following format:
+             <literal>%{bytes}M</literal> (default)
+             <literal>%{kilobytes}M</literal>
+             <literal>%{megabytes}M</literal>
+            </entry>
            </row>
            <row>
             <entry>
