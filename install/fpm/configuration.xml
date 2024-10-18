@@ -930,7 +930,15 @@
             <entry>
              <literal>%T</literal>
             </entry>
-            <entry>time</entry>
+            <entry>
+             time the log has been written (the request has finished). It can
+             accept a strftime(3) format:
+             <literal>%d/%b/%Y:%H:%M:%S %z</literal> (default)
+             The <literal>strftime(3)</literal> format must be encapsulated in 
+             a <literal>%{<strftime_format>}t</literal> tag, e.g. for a ISO8601 
+             formatted timestring, use:
+             <literal>%{%Y-%m-%dT%H:%M:%S%z}t</literal>
+            </entry>
            </row>
            <row>
             <entry>
