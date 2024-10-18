@@ -936,7 +936,15 @@
             <entry>
              <literal>%t</literal>
             </entry>
-            <entry>time</entry>
+            <entry>
+             server time the request was received. It can accept a 
+             <literal>strftime(3)</literal> format:
+             <literal>%d/%b/%Y:%H:%M:%S %z</literal> (default).
+             The <literal>strftime(3)</literal> format must be encapsulated in a
+             <literal>%{<strftime_format>}t</literal> tag, e.g. for a ISO8601
+             formatted timestring, use:
+             <literal>%{%Y-%m-%dT%H:%M:%S%z}t</literal>
+            </entry>
            </row>
            <row>
             <entry>
