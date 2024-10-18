@@ -827,7 +827,14 @@
             <entry>
              <literal>%e</literal>
             </entry>
-            <entry>fastcgi env</entry>
+            <entry>
+             an environment variable (same as <literal>$_ENV</literal> or 
+             <literal>$_SERVER</literal>). It must be associated with embraces
+             to specify the name of the environment variable. Some examples:
+             server specifics like: <literal>%{REQUEST_METHOD}e</literal>
+             or <literal>%{SERVER_PROTOCOL}e</literal>, HTTP headers like:
+             <literal>%{HTTP_HOST}e</literal> or <literal>%{HTTP_USER_AGENT}e</literal>
+            </entry>
            </row>
            <row>
             <entry>
