@@ -906,13 +906,13 @@
             <entry>
              <literal>%Q</literal>
             </entry>
-            <entry>the '?' character if query string exists</entry>
+            <entry>the <literal>?</literal> character if query string exists</entry>
            </row>
            <row>
             <entry>
              <literal>%r</literal>
             </entry>
-            <entry>the request URI (without the query string, see %q and %Q)</entry>
+            <entry>the request URI (without the query string, see <literal>%q</literal> and <literal>%Q</literal>)</entry>
            </row>
            <row>
             <entry>
@@ -935,7 +935,7 @@
              accept a strftime(3) format:
              <literal>%d/%b/%Y:%H:%M:%S %z</literal> (default)
              The <literal>strftime(3)</literal> format must be encapsulated in 
-             a <literal>%{<strftime_format>}t</literal> tag, e.g. for a ISO8601 
+             a <literal>%{&lt;strftime_format&gt;}t</literal> tag, e.g. for a ISO8601 
              formatted timestring, use:
              <literal>%{%Y-%m-%dT%H:%M:%S%z}t</literal>
             </entry>
@@ -949,7 +949,7 @@
              <literal>strftime(3)</literal> format:
              <literal>%d/%b/%Y:%H:%M:%S %z</literal> (default).
              The <literal>strftime(3)</literal> format must be encapsulated in a
-             <literal>%{<strftime_format>}t</literal> tag, e.g. for a ISO8601
+             <literal>%{&lt;strftime_format&gt;}t</literal> tag, e.g. for a ISO8601
              formatted timestring, use:
              <literal>%{%Y-%m-%dT%H:%M:%S%z}t</literal>
             </entry>
